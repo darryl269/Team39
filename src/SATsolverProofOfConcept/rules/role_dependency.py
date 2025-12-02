@@ -4,7 +4,7 @@ class RoleDependency:
 
     def __init__(self, students_count: int, roles_count: int, role: int, dependencies: set[int]):
         """
-        Creates a role dependency. This role can only be given to a student,
+        Creates a role dependency. This role *can* only be given to a student,
         if all the roles in ``dependencies`` are given to a student.
         :param role: the role
         :param dependencies: the roles, on which said role is dependent
